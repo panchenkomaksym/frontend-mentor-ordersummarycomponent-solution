@@ -1,0 +1,170 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 16px;
+	background-image: url(images/pattern-background-desktop.svg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: #e0e8ff
+}
+
+main {
+	margin:50px auto 30px;
+	background-color: #fff;
+	width: 400px;
+	border-radius:20px;
+	box-shadow: 0px 15px 200px 0px hsl(223, 40%, 70%);
+	overflow: hidden;
+	text-align: center;
+}
+
+header.image img {
+	display: block;
+	width:100%;
+	height: auto;
+}
+
+.content {
+	padding: 30px;
+}
+
+h2 {
+	width: 100%;
+	margin-top: 10px;
+	font-size: 28px;
+	color: #1f2f56;
+	font-weight: 900;
+}
+
+p {
+	width: 80%;
+	margin: 0 auto;
+	color: #7280a7;
+	line-height: 1.5;
+	font-weight: 500;
+}
+
+div.product {
+	background-color: #f5f7ff;
+	width: 100%;
+	border-radius: 10px;
+	margin: 10px auto 30px;
+	display: flex;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.product-icon {
+	flex: 1;
+	padding-top: 3px;
+	padding-left: 20px;
+}
+
+.product-description {
+	flex-grow: 2;
+	text-align: left;
+	flex-direction: row;
+	padding-left: 15px;
+}
+
+.product-name{
+	color: #1f2f56;
+	font-weight: 900;
+}
+
+.product-price{
+	padding-top: 8px;
+	color: #7280a7;
+	font-weight: 500;
+}
+
+.product-change {
+	padding-top: 15px;
+	padding-right: 20px;
+	flex: 1;
+	font-size: 14px;
+	font-weight: 900;
+	color: #3829e0;
+}
+
+.product-change:hover {
+	text-decoration: none;
+	color: #766cf1;
+}
+
+a.payment-button {
+	margin-top: 30px;
+	display: block;
+	background-color: #3829e0;
+	color: white;
+	width: 100%;
+	border-radius: 10px;
+	border: none;
+	margin: 10px auto;
+	padding: 15px 0;
+	text-decoration: none;
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	box-shadow: 0 10px 30px 0 #7280a7;
+}
+
+a.payment-button:hover {
+	background-color: #766cf1;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+a.order-cancel {
+	display: block;
+	margin: 40px 0 20px;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 900;
+	color: #7280a7;
+	
+}
+
+a.order-cancel:hover{
+	color:#1f2f56;
+}
+
+@media all and (max-width:900px) {
+	body{
+		background-image: url(images/pattern-background-mobile.svg);
+	}
+	main {
+		margin: 30px auto;
+		width: 340px;
+	}
+	h2 {
+		font-size: 20px;
+	}
+	p{
+		font-size: 14px;
+		width: 100%;
+	}
+	div.product {
+		padding-bottom: 16px;
+	}
+	.product-name{
+		font-size: 14px;
+	}
+	.product-price{
+		font-size: 14px;
+	}
+	.product-change{
+		font-size: 12px;
+	}
+	a.payment-button{
+		font-size: 14px;
+	}
+	a.order-cancel{
+		margin: 30px 0 0;
+	}
+}
