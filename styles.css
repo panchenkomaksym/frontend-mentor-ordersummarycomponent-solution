@@ -13,7 +13,7 @@ body {
 	background-color: #e0e8ff
 }
 
-main {
+section {
 	margin:100px auto 30px;
 	background-color: #fff;
 	width: 420px;
@@ -139,7 +139,7 @@ a.order-cancel:hover{
 	body{
 		background-image: url(images/pattern-background-mobile.svg);
 	}
-	main {
+	section {
 		margin: 30px auto;
 		width: 340px;
 	}
